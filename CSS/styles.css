@@ -112,7 +112,7 @@ p {
 .nav-links li > *,
 .logo {
   text-decoration: none;
-  transition: all 0.15s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .nav-links.collapsible--expanded {
@@ -144,7 +144,9 @@ p {
 @media screen and (min-width: 701px) {
   /* navbar */
   .nav-links {
+    align-items: center;
     display: flex;
+    height: 36px;
     margin: 0;
   }
 
@@ -162,7 +164,7 @@ p {
   }
 
   .nav-bar {
-    padding: 1.2rem 4rem;
+    padding: 1rem 4rem;
   }
 }
 
@@ -179,8 +181,8 @@ p {
   fill: #fff;
 }
 
-.nav-links li:hover {
-  transform: scale(1.1);
+.nav-links a:hover {
+  transform: scale(1.2);
 }
 
 .nav-links a:hover,
@@ -191,3 +193,5 @@ p {
 .block {
   background-color: black;
 }
+
+/* hero section */
