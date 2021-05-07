@@ -1,3 +1,17 @@
+/* Color Palette */
+:root {
+  /* --color-accent: #ff3400; */
+  --color-body: #8f8c9a;
+  --color-body-dark: #5c5577;
+  --color-heading: #1b0760;
+  --color-plain: #fff;
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-nav-content: #d0cdda;
+  /* --color-badge-primary: #126de4; */
+  /* --color-badge-secondary: #02cdf1; */
+}
+
 *,
 *::before,
 *::after {
@@ -45,6 +59,10 @@ h3 {
   font-weight: 500;
 }
 
+a {
+  font-size: 1.8rem;
+}
+
 p {
   margin-top: 0;
 }
@@ -52,7 +70,7 @@ p {
 /* desktop styles */
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   h1 {
@@ -62,4 +80,114 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+
+/* nav-bar */
+.nav-bar {
+  /* background: #304353; */
+  /* width: 100%; */
+  align-items: center;
+  /* box-shadow: 0 0 18px 1px grey; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+  width: 100vw;
+}
+
+.nav-bar--primary {
+  background-color: var(--color-plain);
+}
+
+.logo,
+.nav-links a {
+  color: var(--color-body);
+  display: block;
+}
+
+.nav-links {
+  padding: 0;
+}
+
+.nav-links li > *,
+.logo {
+  text-decoration: none;
+  transition: all 0.15s ease-out;
+}
+
+.nav-links.collapsible--expanded {
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-links > * {
+  list-style: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  /* navbar */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 1rem 3rem;
+  }
+
+  .nav-links li > * {
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  /* navbar */
+  .nav-links {
+    display: flex;
+    margin: 0;
+  }
+
+  .nav-links > * {
+    /* list-style: none; */
+    margin: 0 2rem;
+  }
+
+  .nav-links > li:last-of-type {
+    margin-right: 0;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 1.2rem 4rem;
+  }
+}
+
+/* insert hamburger */
+.nav__menu {
+  cursor: pointer;
+  fill: #aec3c7;
+  height: inherit;
+  vertical-align: text-top;
+  /* width: 30px; */
+}
+
+.menu-icon:hover .nav__menu {
+  fill: #fff;
+}
+
+.nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.nav-links a:hover,
+.logo:hover {
+  color: var(--color-plain);
+}
+
+.block {
+  background-color: black;
 }
