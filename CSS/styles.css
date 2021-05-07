@@ -30,7 +30,8 @@ html {
 
 body {
   color: var(--color-body);
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  /* font-family: Inter, Arial, Helvetica, sans-serif; */
+  font-family: "Open Sans", sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
 }
@@ -42,6 +43,7 @@ h4,
 h5,
 h6 {
   color: var(--color-heading);
+  font-family: "IM Fell Double Pica", serif;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -192,6 +194,66 @@ p {
 
 .block {
   background-color: black;
+  /* padding: 0 3rem; */
+}
+
+.block--arrow-down {
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+  padding-bottom: 6rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 4rem;
+}
+
+/* .grid--cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  } */
+
+/* grid */
+.grid {
+  display: grid;
 }
 
 /* hero section */
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--color-plain);
+}
+
+@media screen and (max-width: 425px) {
+  .grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero .grid--cols-2 {
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .block.hero {
+    /* padding: 0 2rem; */
+  }
+
+  .hero .container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero .grid--cols-2 {
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hero__logo {
+  max-width: 489px;
+  width: 100%;
+}

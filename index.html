@@ -8,40 +8,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&family=Open+Sans&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="block nav-bar nav-bar--primary">
-            <a href="/" class="logo">Kluez</a>
-            <!-- <img src="images/Kluez-Logo-Transparent.png" alt=""> -->
-            <div class="menu-icon" onclick="">
-                <svg class="nav__menu" id="light" enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24"
-                    width="30" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                        <path
-                            d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z" />
-                    </g>
-                    <g>
-                        <path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
-                    </g>
-                    <g>
-                        <path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
-                    </g>
-                    <g>
-                        <path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
-                    </g>
-                </svg>
+    <section class="block block--arrow-down hero">
+        <div class="container grid grid--cols-2">
+            <div>
+                <h1>Kluez Perfumery</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem?</p>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#hero-background">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <picture>
+                <source srcset="/images/kluez images/Resized/pack.webp 1x, /images/kluez images/Resized/pack@2x.webp 2x"
+                    type="image/webp">
+                <source srcset="/images/kluez images/Resized/pack.png 1x, /images/kluez images/Resized/pack@2x.png 2x"
+                    type="image/png">
+                <img class="hero__logo" src="/images/kluez images/Resized/pack.png" alt="">
+                <!-- <img class="hero__logo" src="./images/Kluez-Logo-Transparent.png" alt=""> -->
+            </picture>
         </div>
-    </header>
-
+    </section>
     <script src="./navbar.js"></script>
 </body>
 
