@@ -1,6 +1,6 @@
 /* Color Palette */
 :root {
-  /* --color-accent: #ff3400; */
+  --color-accent: #ff3400;
   --color-body: #8f8c9a;
   --color-body-dark: #5c5577;
   --color-heading: #1b0760;
@@ -8,8 +8,8 @@
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-nav-content: #d0cdda;
-  /* --color-badge-primary: #126de4; */
-  /* --color-badge-secondary: #02cdf1; */
+  --color-badge-primary: #126de4;
+  --color-badge-secondary: #02cdf1;
 }
 
 *,
@@ -263,11 +263,22 @@ p {
   /* border: 1px solid grey; */
   border-radius: 5px;
   box-shadow: 0 0 6px 1px rgb(0 0 0 / 30%);
-  margin: 4rem;
-  /* width: 450px; */
+  /*consider removing the 3 styles below 
+  when putting the cards in a grid, in 
+  case it affects the presentation.*/
+  margin: 4rem auto;
+  max-width: 380px;
+  transition: all 0.3s ease-out;
+  width: 90%;
+}
+
+.pricing:hover {
+  transform: scale(1.05);
 }
 
 .pricing .pricing__header {
+  font-size: 3rem;
+  margin-top: 0;
   padding: 1rem 4rem;
   text-align: center;
   text-transform: capitalize;
@@ -275,14 +286,50 @@ p {
 
 .price__list {
   margin: 0;
-  padding: 0 0 1rem 4rem;
+  padding: 0 0 1rem 3rem;
   /* padding-right: 0; */
 }
 
 .price__list li {
   list-style-image: url(../images/tick.svg);
+  font-size: 1.8rem;
+}
+
+.price__card {
+  padding: 1rem;
 }
 
 .price__card li {
   margin: 1rem 0;
+}
+
+/* buttons */
+.btn {
+  border-radius: 50px;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem auto;
+  outline: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  width: 80%;
+}
+
+.btn-primary {
+  background-color: var(--color-plain);
+  border: 2px solid var(--color-heading);
+  color: var(--color-heading);
+}
+
+/* .btn-secondary {
+    background-color: var(--color-plain);
+    color: var(--color-heading);
+} */
+
+.btn:hover {
+  background-color: var(--color-heading);
+  color: var(--color-plain);
+  cursor: pointer;
 }
