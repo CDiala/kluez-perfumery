@@ -1,15 +1,15 @@
 /* Color Palette */
 :root {
   --color-accent: #ff3400;
-  --color-body: #8f8c9a;
+  --color-badge-primary: #126de4;
+  --color-badge-secondary: #02cdf1;
   --color-body-dark: #5c5577;
+  --color-body: #8f8c9a;
   --color-heading: #1b0760;
+  --color-nav-content: #d0cdda;
   --color-plain: #fff;
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-nav-content: #d0cdda;
-  --color-badge-primary: #126de4;
-  --color-badge-secondary: #02cdf1;
 }
 
 *,
@@ -29,8 +29,8 @@ html {
 }
 
 body {
-  color: var(--color-body);
   /* font-family: Inter, Arial, Helvetica, sans-serif; */
+  color: var(--color-body);
   font-family: "Open Sans", sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
@@ -87,9 +87,9 @@ p {
 /* nav-bar */
 .nav-bar {
   /* background: #304353; */
+  /* box-shadow: 0 0 18px 1px grey; */
   /* width: 100%; */
   align-items: center;
-  /* box-shadow: 0 0 18px 1px grey; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -172,11 +172,11 @@ p {
 
 /* insert hamburger */
 .nav__menu {
+  /* width: 30px; */
   cursor: pointer;
   fill: #aec3c7;
   height: inherit;
   vertical-align: text-top;
-  /* width: 30px; */
 }
 
 .menu-icon:hover .nav__menu {
@@ -193,8 +193,8 @@ p {
 }
 
 .block {
-  background-color: black;
   /* padding: 0 3rem; */
+  background-color: black;
 }
 
 .block--arrow-down {
@@ -267,7 +267,7 @@ p {
   when putting the cards in a grid, in 
   case it affects the presentation.*/
   margin: 4rem auto;
-  max-width: 380px;
+  max-width: 500px;
   transition: all 0.3s ease-out;
   width: 90%;
 }
@@ -285,14 +285,14 @@ p {
 }
 
 .price__list {
+  /* padding-right: 0; */
   margin: 0;
   padding: 0 0 1rem 3rem;
-  /* padding-right: 0; */
 }
 
 .price__list li {
-  list-style-image: url(../images/tick.svg);
   font-size: 1.8rem;
+  list-style-image: url(../images/tick.svg);
 }
 
 .price__card {
@@ -332,4 +332,46 @@ p {
   background-color: var(--color-heading);
   color: var(--color-plain);
   cursor: pointer;
+}
+
+/* price block */
+@media screen and (max-width: 767px) {
+  .block-price .grid--cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .container.block-price {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-price .grid--cols-2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .container.block-price {
+    padding: 0 2rem;
+  }
+
+  .block-price .pricing {
+    max-width: 100%;
+  }
+
+  .block-price .price__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .price__list {
+    flex-grow: 1;
+  }
+}
+
+.pricing:first-child .pricing__header {
+  /* for testing purpose. restyle both price headers before build */
+  background-color: darkorange;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
