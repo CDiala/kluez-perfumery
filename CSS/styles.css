@@ -257,3 +257,32 @@ p {
   max-width: 489px;
   width: 100%;
 }
+
+/* price card */
+.pricing {
+  /* border: 1px solid grey; */
+  border-radius: 5px;
+  box-shadow: 0 0 6px 1px rgb(0 0 0 / 30%);
+  margin: 4rem;
+  /* width: 450px; */
+}
+
+.pricing .pricing__header {
+  padding: 1rem 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.price__list {
+  margin: 0;
+  padding: 0 0 1rem 4rem;
+  /* padding-right: 0; */
+}
+
+.price__list li {
+  list-style-image: url(../images/tick.svg);
+}
+
+.price__card li {
+  margin: 1rem 0;
+}
