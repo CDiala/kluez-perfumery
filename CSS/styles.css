@@ -398,6 +398,12 @@ p {
   width: 85%;
 }
 
+.gallery-block .gallery__heading {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
 .gallery-block img:hover {
   transform: scale(1.1);
 }
