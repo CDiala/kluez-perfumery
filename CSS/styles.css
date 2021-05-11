@@ -433,3 +433,107 @@ p {
     /* row-gap: 10px; */
   }
 }
+
+/* contact block */
+.contact * {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  width: 100%;
+}
+
+.contact-form * {
+  font-size: 1.5rem;
+}
+
+.contact__heading {
+  font-size: 2.4rem;
+  margin: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* .contact__heading::before, */
+.contact__heading::after {
+  content: "";
+  border-bottom: 2px solid red;
+  display: flex;
+  width: 100px;
+  position: relative;
+  top: 1.2rem;
+  right: calc(-50% + 50px);
+}
+
+.contact__body {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.submit {
+  width: initial;
+}
+
+.contact__input {
+  border-radius: 5px;
+  border: 2px solid rgb(58, 57, 57);
+  line-height: 1;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.contact__input:focus,
+.contact__input:active {
+  border: 2px solid dodgerblue;
+  box-shadow: 0 0 4px 0 dodgerblue;
+}
+
+.submit {
+  background-color: var(--color-body);
+  border-radius: 30px;
+  border: 2px solid #da935b;
+  color: rgb(77, 76, 170);
+  font-weight: 600;
+  margin: 3rem auto;
+  outline: none;
+  padding: 1rem 4rem;
+  transition: all 0.3s ease-out;
+}
+
+.submit:hover {
+  background-color: #da935b;
+  border: 2px solid rgb(179, 169, 199);
+  color: var(--color-plain);
+  cursor: pointer;
+}
+
+#comment {
+  height: 150px;
+}
+
+@media screen and (min-width: 650px) {
+  .contact-form {
+    max-width: 584px;
+  }
+
+  .contact-form * {
+    font-size: 1.6rem;
+  }
+
+  .contact__heading {
+    font-size: 2.8rem;
+  }
+
+  .contact__input {
+    padding: 0.7rem;
+  }
+}
+
+.contact-form label {
+  margin-top: 2rem;
+}
+
+h2,
+h3 {
+  border-bottom: 2px solid #e0c47f;
+  padding-bottom: 1rem;
+}
