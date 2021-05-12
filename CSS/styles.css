@@ -49,7 +49,7 @@ h6 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -101,6 +101,10 @@ p {
   background-color: var(--color-plain);
 }
 
+.logo {
+  font-size: 2.4rem;
+}
+
 .logo,
 .nav-links a {
   color: var(--color-body);
@@ -135,6 +139,7 @@ p {
 
   .nav-bar {
     padding: 1rem 3rem;
+    width: 100%;
   }
 
   .nav-links li > * {
@@ -167,6 +172,7 @@ p {
 
   .nav-bar {
     padding: 1rem 4rem;
+    width: 100%;
   }
 }
 
@@ -193,7 +199,7 @@ p {
 }
 
 .block {
-  --block-padding: 6rem;
+  --block-padding: 4rem;
   padding: var(--block-padding) 2rem;
 }
 
@@ -213,7 +219,7 @@ p {
 .container {
   margin: 0 auto;
   max-width: 1140px;
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
 }
 
 /* .grid--cols-3 {
@@ -224,6 +230,7 @@ p {
 /* grid */
 .grid {
   display: grid;
+  justify-content: center;
 }
 
 /* hero section */
@@ -257,12 +264,15 @@ p {
 @media screen and (min-width: 650px) {
   .hero .grid--cols-2 {
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 60% 40%;
   }
 }
 
 .hero__logo {
+  height: 350px;
   max-width: 489px;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -280,7 +290,7 @@ p {
   /*consider removing the 3 styles below 
   when putting the cards in a grid, in 
   case it affects the presentation.*/
-  margin: 4rem auto;
+  margin: 3rem auto;
   max-width: 500px;
   transition: all 0.3s ease-out;
   width: 90%;
@@ -380,10 +390,11 @@ p {
 
   .price__list {
     flex-grow: 1;
+    padding: 0 0 1rem 5rem;
   }
 }
 
-.pricing:first-child .pricing__header {
+.pricing .pricing__header {
   /* for testing purpose. restyle both price headers before build */
   background-color: darkorange;
   border-top-left-radius: 5px;
@@ -409,7 +420,7 @@ p {
   margin-bottom: 10px;
   max-width: 350px;
   transition: all 0.3s;
-  width: 85%;
+  width: 90%;
 }
 
 .gallery-block .gallery__heading {
@@ -446,8 +457,12 @@ p {
 .contact * {
   display: block;
   margin: auto;
-  max-width: 90%;
+  /* max-width: 90%; */
   width: 100%;
+}
+
+.contact-form {
+  padding: 0 1.5rem;
 }
 
 .contact-form * {
@@ -456,13 +471,14 @@ p {
 
 .contact__heading {
   font-size: 2.4rem;
-  margin: 2rem;
+  margin: 2rem auto;
   text-transform: capitalize;
   text-align: center;
 }
 
 /* .contact__heading::before, */
-.contact__heading::after {
+.contact__heading::after,
+h2::after {
   content: "";
   border-bottom: 2px solid red;
   display: flex;
@@ -548,7 +564,7 @@ h3 {
 
 /* footer section */
 .footer-block {
-  /* padding-bottom: 2rem; */
+  padding: 2rem;
 }
 
 .footer-block .grid {
@@ -568,6 +584,8 @@ h3 {
 }
 
 .footer-block .links {
+  display: inline-flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -576,6 +594,7 @@ h3 {
   align-items: center;
   display: inline-flex;
   list-style: none;
+  margin: 0.5rem auto;
 }
 
 .phone::before,
@@ -601,7 +620,7 @@ h3 {
 
 .brand-logo img {
   max-width: 160px;
-  width: 50%;
+  width: 70%;
 }
 
 .copyright {

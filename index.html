@@ -16,6 +16,182 @@
 </head>
 
 <body>
+    <header class="block--dark">
+        <div class="nav-bar">
+            <a href="/" class="logo">Kluez</a>
+            <!-- <img src="images/Kluez-Logo-Transparent.png" alt=""> -->
+            <div class="menu-icon" onclick="">
+                <svg class="nav__menu" id="light" enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24"
+                    width="30" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path
+                            d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z" />
+                    </g>
+                    <g>
+                        <path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                    </g>
+                    <g>
+                        <path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                    </g>
+                    <g>
+                        <path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                    </g>
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#hero-background">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="block block--dark block--arrow-down hero">
+            <div class="container grid grid--cols-2">
+                <div>
+                    <h1>Kluez Perfumery</h1>
+                    <p>We deal in Top Quality Designer Perfume Oils <br>
+                        Retail | Wholesale | Pre-order <br>
+                        (Top Quality French Perfume Oils)
+                    </p>
+                </div>
+                <picture>
+                    <source srcset="/images/Resized/pack.webp 1x, /images/Resized/pack@2x.webp 2x" type="image/webp">
+                    <source srcset="/images/Resized/pack.png 1x, /images/Resized/pack@2x.png 2x" type="image/png">
+                    <img class="hero__logo" src="/images/Resized/pack.png" alt="">
+                    <!-- <img class="hero__logo" src="./images/Kluez-Logo-Transparent.png" alt=""> -->
+                </picture>
+            </div>
+        </section>
+        <section class="block block-price">
+            <div class="container">
+                <h2 class="price__header">Place your orders</h2>
+                <div class="grid grid--cols-2">
+                    <article class="pricing">
+                        <div class="price__card">
+                            <h3 class="pricing__header">
+                                Perfume Oil Pre-Order
+                            </h3>
+                            <ul class="price__list">
+                                <li>500ml - N21,000</li>
+                                <li>1000ml (1kg) - N39,000</li>
+                                <li>1 carton (500ml/kg) - N722,000</li>
+                            </ul>
+                            <button class="btn btn-primary">Order</button>
+                        </div>
+                    </article>
+                    <article class="pricing">
+                        <div class="price__card">
+                            <h3 class="pricing__header">
+                                Wholesale Price list perfume oil
+                            </h3>
+                            <ul class="price__list">
+                                <li>3ml - N300/pc (MOQ-12)</li>
+                                <li>6ml - N600/pc (MOQ-12)</li>
+                                <li>15ml - N1,500/pc (MOQ-12)</li>
+                                <li>50ml - N3,500/pc (MOQ-3)</li>
+                                <li>100ml - N6,000/pc (MOQ-3)</li>
+                            </ul>
+                            <button class="btn btn-primary">Order</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="block gallery-block">
+            <div class="container">
+                <h2 class="gallery__heading">The collection</h2>
+                <div class="grid grid--cols-2 grid--cols-3">
+                    <figure class="gallery__image">
+                        <picture>
+                            <source
+                                srcset="./images/Resized/dior_calligraphy.webp 1x, ./images/Resized/dior_calligraphy@2x.webp 2x"
+                                type="image/webp">
+                            <source
+                                srcset="./images/Resized/dior_calligraphy.jpg 1x, ./images/Resized/dior_calligraphy@2x.jpg 2x"
+                                type="image/jpg">
+                            <img src="./images/Resized/dior_calligraphy.jpg" alt="">
+                        </picture>
+                        <figcaption>Dior Sauvage | Caligraphy Aramis</figcaption>
+                    </figure>
+                    <figure class="gallery__image">
+                        <picture>
+                            <source
+                                srcset="./images/Resized/escada_montblanc.webp 1x, ./images/Resized/escada_montblanc@2x.webp 2x"
+                                type="image/webp">
+                            <source
+                                srcset="./images/Resized/escada_montblanc.jpg 1x, ./images/Resized/escada_montblanc@2x.jpg 2x"
+                                type="image/jpg">
+                            <img src="./images/Resized/escada_montblanc.jpg" alt="">
+                        </picture>
+                        <figcaption>Escada Magnetism | Mont Blanc Legend</figcaption>
+                    </figure>
+                    <figure class="gallery__image">
+                        <picture>
+                            <source srcset="./images/Resized/pack_1.webp 1x, ./images/Resized/pack_1@2x.webp 2x"
+                                type="image/webp">
+                            <source srcset="./images/Resized/pack_1.png 1x, ./images/Resized/pack_1@2x.png 2x"
+                                type="image/png">
+                            <img src="./images/Resized/pack_1.png" alt="">
+                        </picture>
+                        <figcaption>Variants</figcaption>
+                    </figure>
+                    <figure class="gallery__image">
+                        <picture>
+                            <source
+                                srcset="./images/Resized/giorgio_polo.webp 1x, ./images/Resized/giorgio_polo@2x.webp 2x"
+                                type="image/webp">
+                            <source
+                                srcset="./images/Resized/giorgio_polo.jpg 1x, ./images/Resized/giorgio_polo@2x.jpg 2x"
+                                type="image/jpg">
+                            <img src="./images/Resized/giorgio_polo.jpg" alt="">
+                        </picture>
+                        <figcaption>Giorgio Armani | Polo Sport</figcaption>
+                    </figure>
+                    <figure class="gallery__image">
+                        <picture>
+                            <source
+                                srcset="./images/Resized/multi_perfumes.webp 1x, ./images/Resized/multi_perfumes@2x.webp 2x"
+                                type="image/webp">
+                            <source
+                                srcset="./images/Resized/multi_perfumes.jpg 1x, ./images/Resized/multi_perfumes@2x.jpg 2x"
+                                type="image/jpg">
+                            <img src="./images/Resized/multi_perfumes.jpg" alt="">
+                        </picture>
+                        <figcaption>Variants</figcaption>
+                    </figure>
+                    <figure class="gallery__image">
+                        <picture>
+                            <source srcset="./images/Resized/pack.webp 1x, ./images/Resized/pack@2x.webp 2x"
+                                type="image/webp">
+                            <source srcset="./images/Resized/pack.png 1x, ./images/Resized/pack@2x.png 2x"
+                                type="image/png">
+                            <img src="./images/Resized/pack.png" alt="">
+                        </picture>
+                        <figcaption>Variants</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="block contact">
+            <div class="container">
+                <h2 class="contact__heading"> contact us</h2>
+                <form class="contact-form" action="">
+                    <p class="contact__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
+                        aliquam.
+                    </p>
+                    <label for="name">Name</label>
+                    <input class="contact__input" id="name" type="text">
+                    <label for="email">Email</label>
+                    <input class="contact__input" id="email" type="email">
+                    <label for="comment">Comment</label>
+                    <textarea class="contact__input" name="comment" id="comment" cols="30" rows="10"></textarea>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer class="block block--colored footer-block">
         <div class="container grid grid--cols-3">
             <section class="brand-logo">
