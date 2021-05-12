@@ -1,15 +1,15 @@
 /* Color Palette */
 :root {
-  --color-accent: #ff3400;
-  --color-badge-primary: #126de4;
-  --color-badge-secondary: #02cdf1;
-  --color-body-dark: #5c5577;
+  --color-accent: #ad2831;
+  --color-header: #2f0707;
+  /* --color-badge-secondary: #02cdf1; */
+  /* --color-body-dark: #5c5577; */
   --color-body: #8f8c9a;
   --color-heading: #1b0760;
-  --color-nav-content: #d0cdda;
+  /* --color-nav-content: #d0cdda; */
   --color-plain: #fff;
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
+  --color-primary: #38040e;
+  --color-secondary: #640d14;
 }
 
 *,
@@ -30,6 +30,7 @@ html {
 
 body {
   /* font-family: Inter, Arial, Helvetica, sans-serif; */
+  background-color: navajowhite;
   color: var(--color-body);
   font-family: "Open Sans", sans-serif;
   font-size: 2.4rem;
@@ -85,6 +86,10 @@ p {
 }
 
 /* nav-bar */
+.header {
+  background-color: var(--color-primary);
+}
+
 .nav-bar {
   /* background: #304353; */
   /* box-shadow: 0 0 18px 1px grey; */
@@ -204,11 +209,11 @@ p {
 }
 
 .block--dark {
-  background-color: black;
+  background-color: var(--color-primary);
 }
 
 .block--colored {
-  background-color: #651288fa;
+  background-color: var(--color-secondary);
 }
 
 .block--arrow-down {
@@ -334,6 +339,7 @@ p {
   font-size: 1.8rem;
   font-weight: bold;
   margin: 1rem auto;
+  max-width: 55%;
   outline: none;
   padding: 1rem 2rem;
   text-transform: uppercase;
@@ -342,9 +348,10 @@ p {
 }
 
 .btn-primary {
-  background-color: var(--color-plain);
-  border: 2px solid var(--color-heading);
-  color: var(--color-heading);
+  background-color: var(--color-accent);
+  border: 2px solid #afaaaadb;
+  box-shadow: 0 0 1px 1px red;
+  color: var(--color-body);
 }
 
 /* .btn-secondary {
@@ -353,7 +360,9 @@ p {
 } */
 
 .btn:hover {
-  background-color: var(--color-heading);
+  background-color: #640d14;
+  border: 2px solid var(--color-plain);
+  box-shadow: 0 0 1px 1px #640d14;
   color: var(--color-plain);
   cursor: pointer;
 }
@@ -396,7 +405,7 @@ p {
 
 .pricing .pricing__header {
   /* for testing purpose. restyle both price headers before build */
-  background-color: darkorange;
+  background-color: #ff9800d6;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -470,7 +479,7 @@ p {
 }
 
 .contact__heading {
-  font-size: 2.4rem;
+  /* font-size: 2.4rem; */
   margin: 2rem auto;
   text-transform: capitalize;
   text-align: center;
@@ -480,12 +489,12 @@ p {
 .contact__heading::after,
 h2::after {
   content: "";
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--color-accent);
   display: flex;
-  width: 100px;
+  width: 150px;
   position: relative;
   top: 1.2rem;
-  right: calc(-50% + 50px);
+  right: calc(-50% + 75px);
 }
 
 .contact__body {
@@ -512,10 +521,10 @@ h2::after {
 }
 
 .submit {
-  background-color: var(--color-body);
+  /* background-color: var(--color-body); */
   border-radius: 30px;
-  border: 2px solid #da935b;
-  color: rgb(77, 76, 170);
+  /* border: 2px solid #da935b; */
+  /* color: rgb(77, 76, 170); */
   font-weight: 600;
   margin: 3rem auto;
   outline: none;
@@ -523,12 +532,12 @@ h2::after {
   transition: all 0.3s ease-out;
 }
 
-.submit:hover {
-  background-color: #da935b;
+/* .submit:hover {
+  background-color: var(--color-primary);
   border: 2px solid rgb(179, 169, 199);
   color: var(--color-plain);
   cursor: pointer;
-}
+} */
 
 #comment {
   height: 150px;
@@ -544,7 +553,7 @@ h2::after {
   }
 
   .contact__heading {
-    font-size: 2.8rem;
+    /* font-size: 2.8rem; */
   }
 
   .contact__input {
@@ -571,6 +580,7 @@ h3 {
   align-items: center;
   font-size: 1.8rem;
   justify-content: center;
+  padding: 2rem 0;
   row-gap: 10px;
   text-align: center;
 }
@@ -595,6 +605,11 @@ h3 {
   display: inline-flex;
   list-style: none;
   margin: 0.5rem auto;
+}
+
+.whatsapp-icon,
+.ig-icon {
+  fill: navajowhite;
 }
 
 .phone::before,
