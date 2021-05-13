@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Get your oil perfumes at affordable prices">
+    <meta property="og:title" content="Kluez Perfumery...">
+    <meta property="og:description" content="Get your oil perfumes at affordable prices">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="https://kluez_perfumery.netlify.app">
+    <title>Kluez Perfumery</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&family=Open+Sans&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -66,9 +74,9 @@
         </section>
         <section class="block block-price">
             <div class="container">
-                <h2 class="price__header">Place your orders</h2>
+                <h2 data-aos="zoom-in-up" class="price__header">Place your orders</h2>
                 <div class="grid grid--cols-2">
-                    <article class="pricing">
+                    <article data-aos="zoom-in-up" class="pricing">
                         <div class="price__card">
                             <h3 class="pricing__header">
                                 Perfume Oil Pre-Order
@@ -81,7 +89,7 @@
                             <button class="btn btn-primary">Order</button>
                         </div>
                     </article>
-                    <article class="pricing">
+                    <article data-aos="zoom-in-up" class="pricing">
                         <div class="price__card">
                             <h3 class="pricing__header">
                                 Wholesale Price list perfume oil
@@ -101,9 +109,9 @@
         </section>
         <section class="block gallery-block">
             <div class="container">
-                <h2 class="gallery__heading">The collection</h2>
+                <h2 data-aos="zoom-in-up" class="gallery__heading">The collection</h2>
                 <div class="grid grid--cols-2 grid--cols-3">
-                    <figure class="gallery__image">
+                    <figure data-aos="zoom-in-up" class="gallery__image">
                         <picture>
                             <source
                                 srcset="./images/Resized/dior_calligraphy.webp 1x, ./images/Resized/dior_calligraphy@2x.webp 2x"
@@ -115,7 +123,7 @@
                         </picture>
                         <figcaption>Dior Sauvage | Caligraphy Aramis</figcaption>
                     </figure>
-                    <figure class="gallery__image">
+                    <figure data-aos="zoom-in-up" class="gallery__image">
                         <picture>
                             <source
                                 srcset="./images/Resized/escada_montblanc.webp 1x, ./images/Resized/escada_montblanc@2x.webp 2x"
@@ -127,7 +135,7 @@
                         </picture>
                         <figcaption>Escada Magnetism | Mont Blanc Legend</figcaption>
                     </figure>
-                    <figure class="gallery__image">
+                    <figure data-aos="zoom-in-up" class="gallery__image">
                         <picture>
                             <source srcset="./images/Resized/pack_1.webp 1x, ./images/Resized/pack_1@2x.webp 2x"
                                 type="image/webp">
@@ -137,7 +145,7 @@
                         </picture>
                         <figcaption>Variants</figcaption>
                     </figure>
-                    <figure class="gallery__image">
+                    <figure data-aos="zoom-in-up" class="gallery__image">
                         <picture>
                             <source
                                 srcset="./images/Resized/giorgio_polo.webp 1x, ./images/Resized/giorgio_polo@2x.webp 2x"
@@ -149,7 +157,7 @@
                         </picture>
                         <figcaption>Giorgio Armani | Polo Sport</figcaption>
                     </figure>
-                    <figure class="gallery__image">
+                    <figure data-aos="zoom-in-up" class="gallery__image">
                         <picture>
                             <source
                                 srcset="./images/Resized/multi_perfumes.webp 1x, ./images/Resized/multi_perfumes@2x.webp 2x"
@@ -161,7 +169,7 @@
                         </picture>
                         <figcaption>Variants</figcaption>
                     </figure>
-                    <figure class="gallery__image">
+                    <figure data-aos="zoom-in-up" class="gallery__image">
                         <picture>
                             <source srcset="./images/Resized/pack.webp 1x, ./images/Resized/pack@2x.webp 2x"
                                 type="image/webp">
@@ -176,8 +184,8 @@
         </section>
         <section class="block contact">
             <div class="container">
-                <h2 class="contact__heading"> contact us</h2>
-                <form class="contact-form" action="">
+                <h2 data-aos="zoom-in-up" class="contact__heading"> contact us</h2>
+                <form data-aos="zoom-in-up" class="contact-form" action="submit">
                     <p class="contact__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
                         aliquam.
                     </p>
@@ -193,16 +201,16 @@
         </section>
     </main>
     <footer class="block block--dark footer-block">
-        <div class="container grid grid--cols-3">
-            <section class="brand-logo">
+        <section aria-label="footer" class="container grid grid--cols-3">
+            <div class="brand-logo">
                 <picture>
                     <source srcset="./images/logo.webp 1x, ./images/logo@2x.webp 2x" type="image/webp">
                     <source srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" type="image/png">
                     <img src="./images/logo.png" alt="brand logo">
                 </picture>
                 <p class="copyright">&copy; 2021</p>
-            </section>
-            <section>
+            </div>
+            <div>
                 <div>
                     <p class="footer__contact">
                         20 William Bassey Street,<br>
@@ -211,8 +219,8 @@
                         Akwa Ibom State.
                     </p>
                 </div>
-            </section>
-            <section>
+            </div>
+            <div>
                 <ul class="links">
                     <li>
                         <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -237,11 +245,15 @@
                             class="ig_handle">@kluez_perfumery</a>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </footer>
 
     <script src="./navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
