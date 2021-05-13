@@ -277,6 +277,10 @@ p {
     /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: 60% 40%;
   }
+
+  .hero .container {
+    padding-top: 6rem;
+  }
 }
 
 .hero__logo {
