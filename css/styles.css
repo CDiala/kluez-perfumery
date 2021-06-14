@@ -269,6 +269,23 @@ p {
   .hero .container {
     padding: 0 2rem;
   }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero picture {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .hero .hero__logo {
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 650px) {
