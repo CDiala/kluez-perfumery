@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body onload="onLoad()">
     <header class="header">
         <div class="nav-bar">
             <a href="/" class="logo">Kluez</a>
@@ -183,14 +183,16 @@
         <section class="block contact" id="contact">
             <div class="container">
                 <h2 data-aos="zoom-in-up" class="contact__heading"> contact us</h2>
-                <form data-aos="zoom-in-up" class="contact-form" action="submit">
+                <form data-aos="zoom-in-up" class="contact-form" action="https://formspree.io/f/xleanabv" method="POST">
                     <p class="contact__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
                         aliquam.
                     </p>
                     <label for="name">Name</label>
-                    <input class="contact__input" id="name" type="text">
+                    <input class="contact__input" id="name" type="text" name="name" required>
                     <label for="email">Email</label>
-                    <input class="contact__input" id="email" type="email">
+                    <input class="contact__input" id="email" type="email" name="_replyto" required>
+                    <label for="phone">Phone</label>
+                    <input class="contact__input" id="phone" type="tel" name="phone" required>
                     <label for="comment">Comment</label>
                     <textarea class="contact__input" name="comment" id="comment" cols="30" rows="10"></textarea>
                     <button class="submit btn btn-primary">Submit</button>

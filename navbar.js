@@ -50,3 +50,16 @@ navLinks.forEach(item => {
 
 // console.log(window.location);
 
+
+function onLoad() {
+    console.log('form loaded');
+    let name = document.getElementById('name');
+    let email = document.getElementById('email');
+    let phone = document.getElementById('phone');
+    let comment = document.getElementById('comment');
+
+    name.value = '';
+    email.value = '';
+    comment.value = '';
+    phone.value = null;
+}
